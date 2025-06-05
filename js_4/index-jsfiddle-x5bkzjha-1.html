@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AlphaBeta Assignment - Div Creation</title>
+
+  <style>
+     #container {
+    padding: 20px;
+    border: 2px dashed gray;
+  }
+  </style>
+
+  
+</head>
+<body>
+  <!-- Task Statement
+
+Write a JavaScript function createDiv(width, height, text) that creates and adds a new div element inside the #container div with the specified width and height. The div element should have text as its text content.
+
+Note: Do not modify the HTML code
+
+Note: width and height which are passed as arguments to the createDiv function do not contain the unit. Make sure to add the unit of "px" to it before setting the values -->
+
+<div id="container">
+
+</div>
+
+  <script>
+    //Write your code here
+function createDiv(width, height, text) {
+	const newDiv = document.createElement("div");
+  newDiv.style.width = width + "px";
+  newDiv.style.height = height + "px";
+  newDiv.textContent = text;
+  newDiv.style.border = "1px solid red";
+  newDiv.style.margin = "5px";
+  newDiv.style.padding = "5px";
+  newDiv.style.background = "red";
+
+  const container = document.getElementById("container");
+  container.appendChild(newDiv);
+    
+}
+
+createDiv(100, 50, "Hello World!");
+// Do not change this code
+Window.createDiv = createDiv;
+  </script>
+</body>
+</html>
