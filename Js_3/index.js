@@ -43,10 +43,7 @@ console.log("Q2");
 
 // Q3) Change 'INDIA' to 'INDONESIA' using array.splice.
 let countryArr = Array.from("INDIA"); 
-// ["I","N","D","I","A"]
-// We want to insert "ONE S" between "D" and "I": 
-// current arr: ['I','N','D','I','A']
-// index of second 'I' is 3, so splice at index 3
+
 countryArr.splice(3, 0, ..."ONES"); 
 
 let newCountry = countryArr.join("");
@@ -56,7 +53,7 @@ console.log("Q3");
 
 // Q4) Take any string ≥ 20 chars. Count number of consonants and vowels.
 let sampleText = "The quick brown fox jumps over"; 
-// length is 27
+
 let vowelsCount = 0;
 let consonantsCount = 0;
 for (let char of sampleText.toLowerCase()) {
@@ -74,7 +71,7 @@ console.log("Q4");
 
 // Q5) Function to replace a wrong word with a correct word in any sentence.
 function correctfn(sentence, wrong, correct) {
-  // Using a global, case-sensitive replace for simplicity:
+  
   return sentence.replace(new RegExp(wrong, "g"), correct);
 }
 
@@ -128,7 +125,7 @@ console.log("Q8");
 
 // Q9) Function to count the number of words in a paragraph.
 function countWords(paragraph) {
-  // Split on one or more whitespace characters
+  
   const words = paragraph.trim().split(/\s+/);
   return words.filter((w) => w.length > 0).length;
 }
@@ -138,7 +135,7 @@ let paragraph =
 console.log(
   "Word count:",
   countWords(paragraph)
-); // Expected output: 11
+); 
 console.log("Q9");
 
 

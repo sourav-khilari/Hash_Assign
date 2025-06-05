@@ -1,4 +1,3 @@
-// src/components/MovieDetail.jsx
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import movies from "../data/movies";

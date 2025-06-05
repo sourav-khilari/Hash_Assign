@@ -4,7 +4,7 @@ for (let i = 1; i <= 100; i++) {
     console.log(i);
   }
 }
-// Sample console output (first few evens): 2 4 6 8 10 …
+
 
 // 2. Function that can add, subtract, multiply, or divide two numbers using switch
 function calculate(a, b, operator) {
@@ -20,7 +20,7 @@ function calculate(a, b, operator) {
       result = a * b;
       break;
     case "/":
-      // Handle division by zero
+  
       if (b === 0) {
         return "Error: Division by zero";
       }
@@ -31,13 +31,13 @@ function calculate(a, b, operator) {
   }
   return result;
 }
-// Examples:
-console.log(calculate(10, 5, "+")); // 15
-console.log(calculate(10, 5, "-")); // 5
-console.log(calculate(10, 5, "*")); // 50
-console.log(calculate(10, 5, "/")); // 2
 
-// 3. Function findTax() using switch to calculate tax on salary
+console.log(calculate(10, 5, "+")); 
+console.log(calculate(10, 5, "-")); 
+console.log(calculate(10, 5, "*")); 
+console.log(calculate(10, 5, "/")); 
+
+// 3. Function to find tax based on salary using switch
 function findTax(salary) {
   let taxRate;
   switch (true) {
@@ -58,16 +58,16 @@ function findTax(salary) {
   }
   return salary * taxRate;
 }
-// Examples:
-console.log(findTax(400000));  // 0 (0%)
-console.log(findTax(750000));  // 75000 (10% of 750,000)
-console.log(findTax(1250000)); // 250000 (20% of 1,250,000)
-console.log(findTax(2000000)); // 600000 (30% of 2,000,000)
+
+console.log(findTax(400000)); 
+console.log(findTax(750000)); 
+console.log(findTax(1250000));
+console.log(findTax(2000000));
 
 // 4. Function to find sum of the products of corresponding digits of two numbers
 function sumProductDigits(n1, n2) {
   let sum = 0;
-  // Process least significant digits first
+
   while (n1 > 0 || n2 > 0) {
     const digit1 = n1 % 10;
     const digit2 = n2 % 10;
@@ -77,6 +77,6 @@ function sumProductDigits(n1, n2) {
   }
   return sum;
 }
-// Examples:
-console.log(sumProductDigits(6, 34));   // (6*4)+(0*3) = 24
-console.log(sumProductDigits(123, 45)); // (3*5)+(2*4)+(1*0) = 15 + 8 + 0 = 23
+
+console.log(sumProductDigits(6, 34));   
+console.log(sumProductDigits(123, 45)); 

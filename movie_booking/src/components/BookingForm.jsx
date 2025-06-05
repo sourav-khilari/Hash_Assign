@@ -1,4 +1,3 @@
-// src/components/BookingForm.jsx
 import React, { useState } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import movies from "../data/movies";

@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Optional: Hide menu when clicking outside
+
   document.addEventListener('click', (e) => {
     if (
       !navbar.contains(e.target) &&

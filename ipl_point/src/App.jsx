@@ -1,4 +1,3 @@
-// src/components/PointsTable.jsx
 import React, { useEffect, useState } from "react";
 
 const App = () => {
@@ -21,8 +20,6 @@ const App = () => {
         const sorted = data
           .slice() // copy array
           .sort((a, b) => {
-            // a.NRR and b.NRR are already numbers in this JSON,
-            // but if they were strings, we could do parseFloat():
             return parseFloat(a.NRR) - parseFloat(b.NRR);
           });
 

@@ -1,4 +1,3 @@
-// src/components/BookingSuccess.jsx
 import React from "react";
 import { useLocation, Link } from "react-router-dom";
 
