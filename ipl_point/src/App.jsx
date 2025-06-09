@@ -47,7 +47,7 @@ const App = () => {
   }
 
   return (
-    <div className="p-4 max-w-4xl mx-auto">
+    <div className="p-4 mx-auto flex flex-col items-center justify-center w-screen h-0-screen bg-gray-100">
       <h2 className="text-2xl font-semibold mb-4 text-center">
         IPL 2022 Points Table (sorted by NRR ascending)
       </h2>

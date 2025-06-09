@@ -9,7 +9,7 @@ export default function Todos() {
   return (
     todos.length && <div key={nanoid()}>
         <div key={nanoid()}>Todos</div>
-    <ul className="list-none" key={nanoid()}>
+    <ul className="list-none w-full" key={nanoid()}>
         {todos.map((todo) => (
           <li
             className="mt-4 flex justify-between items-center bg-zinc-800 px-4 py-2 rounded"
